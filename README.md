@@ -1,0 +1,2 @@
+# takeda
+ proyecto estadia

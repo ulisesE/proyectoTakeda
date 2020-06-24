@@ -1,0 +1,12 @@
+<IfModule mod_rewrite.c>
+    # Activar rewrite
+    RewriteEngine on
+    #Direccion de la pagina por si se encuentra un error
+    ErrorDocument 404 http://localhost/takeda/error/
+    
+    RewriteCond %{SCRIPT_FILENAME} !-d
+    RewriteCond %{SCRIPT_FILENAME} !-f
+
+    Rewriterule ^(.*)/(.*) index.php?controlador=$1&accion=$2
+
+</IfModule>

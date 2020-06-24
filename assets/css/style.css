@@ -1,0 +1,142 @@
+/* SECTIONS
+**************************************/
+
+
+.post-media img,
+.masonry-box img {
+    -webkit-transition: all .3s ease-in-out;
+    -moz-transition: all .3s ease-in-out;
+    -ms-transition: all .3s ease-in-out;
+    -o-transition: all .3s ease-in-out;
+    transition: all .3s ease-in-out;
+    -webkit-transform: scale(1);
+    -moz-transform: scale(1);
+    -ms-transform: scale(1);
+    -o-transform: scale(1);
+    transform: scale(1);
+}
+
+.post-media:hover img,
+.masonry-box:hover img {
+    -webkit-transform: scale(1.1);
+    -moz-transform: scale(1.1);
+    -ms-transform: scale(1.1);
+    -o-transform: scale(1.1);
+    transform: scale(1.1);
+}
+
+/* PAGES 
+**************************************/
+
+
+.breadcrumb-item {
+    float: none;
+    font-size: 12px;
+    display: inline-block;
+}
+
+
+/* BLOG 
+**************************************/
+
+
+.comments-list img {
+    max-width: 80px;
+    margin-right: 30px;
+}
+
+
+hr.invis {
+    border: 0;
+    margin: 2rem 0;
+}
+
+hr.invis1 {
+    border: 0;
+    margin: 4rem 0;
+}
+
+
+
+.post-media {
+    position: relative;
+    overflow: hidden;
+}
+
+.shadoweffect {
+    position: absolute;
+    top: 0;
+    opacity: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background: -moz-linear-gradient(0deg, rgba(0, 0, 0, 1) 0%, rgba(0, 0, 0, 0.1) 30%);
+    background: -webkit-linear-gradient(0deg, rgba(0, 0, 0, 1) 0%, rgba(0, 0, 0, 0.1) 30%);
+    background: linear-gradient(0deg, rgba(0, 0, 0, 1) 0%, rgba(0, 0, 0, 0.1) 30%);
+    filter: progid: DXImageTransform.Microsoft.gradient( startColorstr='#000000', endColorstr='#00000000', GradientType=1);
+    -webkit-transition: all .3s ease-in-out;
+    -moz-transition: all .3s ease-in-out;
+    -ms-transition: all .3s ease-in-out;
+    -o-transition: all .3s ease-in-out;
+    transition: all .3s ease-in-out;
+    -webkit-transform: scale(1);
+    -moz-transform: scale(1);
+    -ms-transform: scale(1);
+    -o-transform: scale(1);
+    transform: scale(1);
+    zoom: 1;
+    filter: alpha(opacity=100);
+    opacity: 1;
+}
+
+.shadow-desc {
+    position: absolute;
+    bottom: 0;
+    padding: 1rem 1.5rem;
+}
+
+.shadow-desc .blog-meta small::after,
+.shadow-desc .blog-meta a,
+.shadow-desc .blog-meta h4 a {
+    color: #ffffff !important;
+}
+
+
+.hovereffect {
+    position: absolute;
+    top: 0;
+    opacity: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background-color: rgba(0, 0, 0, 0.2);
+    -webkit-transition: all .3s ease-in-out;
+    -moz-transition: all .3s ease-in-out;
+    -ms-transition: all .3s ease-in-out;
+    -o-transition: all .3s ease-in-out;
+    transition: all .3s ease-in-out;
+    zoom: 1;
+    filter: alpha(opacity=0);
+    opacity: 0.5;
+    background: -moz-linear-gradient(0deg, rgba(0, 0, 0, 1) 0%, rgba(0, 0, 0, 0.1) 50%);
+    background: -webkit-linear-gradient(0deg, rgba(0, 0, 0, 1) 0%, rgba(0, 0, 0, 0.1) 50%);
+    background: linear-gradient(0deg, rgba(0, 0, 0, 1) 0%, rgba(0, 0, 0, 0.1) 50%);
+    filter: progid: DXImageTransform.Microsoft.gradient( startColorstr='#000000', endColorstr='#00000000', GradientType=1);
+}
+
+.post-media:hover .hovereffect span::before,
+.post-media:hover .hovereffect {
+    visibility: visible;
+    zoom: 1;
+    filter: alpha(opacity=100);
+    opacity: 1;
+}
+
+
+
+.blog-list .blog-meta.big-meta h4 {
+    margin-left: -20%;
+    margin-top: 1rem;
+    background-color: #ffffff;
+    padding: 1rem 1.5rem 1rem;
+}
